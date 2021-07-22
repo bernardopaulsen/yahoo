@@ -10,7 +10,10 @@ Welcome to yahoo's documentation!
    :maxdepth: 2
    :caption: Contents:
    
+   description
    api
+   support
+   contributing
 
 
 

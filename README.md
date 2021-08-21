@@ -11,7 +11,7 @@ It can also calculate the logarithmic return.
 At the library's folder, run
 
 ```python
-pip install ../yahoo
+pip install -i https://test.pypi.org/simple/ yahoo
 ```
 
 ## Usage

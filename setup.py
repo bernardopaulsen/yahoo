@@ -11,13 +11,13 @@ with open("README.md", "r") as readme_file:
         ]
     setup(
         name="yahoo",
-        version="0.1.0",
+        version="0.1.2",
         author_email="bernardopaulsen@gmail.com",
         author="Bernardo Paulsen",
         description="A package to import data from Yahoo Finance! API.",
         long_description=readme,
         long_description_content_type="text/markdown",
-        url="https://github.com/bernardopaulsen/yahoo",
+        url="https://yahoo.readthedocs.io/en/latest/",
         packages=find_packages(),
         install_requires=requirements,
         classifiers=[

@@ -5,15 +5,15 @@ Author      : Bernardo Paulsen
 Version     : 0.1.0
 """
 import datetime
-import numpy                         as np
-import pandas                        as pd
-from   pandas_datareader import data
+import numpy as np
+import pandas as pd
+from pandas_datareader import data
 
-def get(
-    ticker       : str, 
-    initial_date : tuple,
-    final_date   : tuple,
-    log_return   : bool = True) -> pd.DataFrame:
+
+def get(ticker: str,
+        initial_date: tuple,
+        final_date: tuple,
+        log_return: bool = True) -> pd.DataFrame:
     """
     Gets market data for individual assets from Yahoo! Finance API given stock ticker and first and last date.
 
@@ -29,9 +29,9 @@ def get(
     :return: Market data for the asset
     :rtype: pandas.DataFrame
     """
-    initial_date     = datetime.datetime(*initial_date)
-    final_date       = datetime.datetime(*final_date)
-    prices           = data.DataReader(ticker, "yahoo", initial_date, final_date)
+    initial_date = datetime.datetime(*initial_date)
+    final_date = datetime.datetime(*final_date)
+    prices = data.DataReader(ticker, "yahoo", initial_date, final_date)
     if log_return:
-        prices["LogRet"] = np.log(prices["Adj Close"]/prices["Adj Close"].shift(1))
+        prices["LogRet"] = np.log(prices["Adj Close"] / prices["Adj Close"].shift(1))
     return prices

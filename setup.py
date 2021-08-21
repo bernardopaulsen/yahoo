@@ -11,7 +11,7 @@ with open("README.md", "r") as readme_file:
         ]
     setup(
         name="yahoo",
-        version="0.1.2",
+        version="0.1.3",
         author_email="bernardopaulsen@gmail.com",
         author="Bernardo Paulsen",
         description="A package to import data from Yahoo Finance! API.",

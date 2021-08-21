@@ -12,7 +12,7 @@ setup(
     version="0.1.0",
     author="Bernardo Paulsen",
     author_email="bernardopaulsen@gmail.com",
-    description="A package to import data frmo Yahoo Finance! API.",
+    description="A package to import data from Yahoo Finance! API.",
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://github.com/bernardopaulsen/yahoo",
